@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
   String _text = 'Home';
   final _panels = ['Home', 'Settings'];
   int _currentIndex = 0;
-  var _tabs = [
+  final _tabs = const [
     HomeTab(),
     SettingsTab(),
   ];

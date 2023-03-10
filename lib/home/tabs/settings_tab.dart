@@ -5,10 +5,12 @@ class SettingsTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'Settings',
-        style: Theme.of(context).textTheme.displayLarge,
+    return GestureDetector(
+      child: Center(
+        child: Text(
+          'Settings',
+          style: Theme.of(context).textTheme.displayLarge,
+        ),
       ),
     );
   }
