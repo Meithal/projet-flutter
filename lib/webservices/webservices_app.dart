@@ -49,8 +49,10 @@ class _WebservicesHomeState extends State<WebservicesHome> {
         _users.addAll(users);
       });
     } catch (error) {
-      _loading = false;
-      _error = 'Une erreur est survenue $error';
+      setState(() {
+        _loading = false;
+        _error = 'Une erreur est survenue $error';
+      });
     }
   }
 
@@ -94,11 +96,13 @@ class _WebservicesHomeState extends State<WebservicesHome> {
       );
     }
 
-    return ListView.builder(itemBuilder: (context, index) {
-      final user = _users[index];
-      return ListTile(
-        title: Text(user.userName),
-      );
-    });
+    return ListView.builder(
+        itemCount: _users.length,
+        itemBuilder: (context, index) {
+          final user = _users[index];
+          return ListTile(
+            title: Text(user.userName),
+          );
+        });
   }
 }
