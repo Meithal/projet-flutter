@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
   }
 
   void _onNewIndexClicked(int val) {
-    print('Coucou, new index is : $val');
+    debugPrint('Coucou, new index is : $val');
     setState(() {
       _text = _panels[val];
       _currentIndex = val;

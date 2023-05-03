@@ -36,11 +36,11 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
   }
 
   void _onTap(int newIndex) {
-    print('new index: $_currentIndex');
+    debugPrint('new index: $_currentIndex');
     setState(() {
       widget.onTap(newIndex);
       _currentIndex = newIndex;
-      print('ontap, new index is : $newIndex');
+      debugPrint('ontap, new index is : $newIndex');
     });
   }
 }

@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class User {
   final String name;
   final int age;
@@ -10,9 +12,9 @@ void main() {
   const toto1 = User(42, name: 'toto');
   const toto2 = User(42, name: 'toto');
 
-  var toto3 = User(42, name: 'toto');
-  var toto4 = User(42, name: 'toto');
+  var toto3 = const User(42, name: 'toto');
+  var toto4 = const User(42, name: 'toto');
 
-  print(toto1 == toto2);
-  print(toto3 == toto4);
+  debugPrint('toto1 == toto2 ${toto1 == toto2}');
+  debugPrint('toto3 == toto4 ${toto3 == toto4}');
 }
