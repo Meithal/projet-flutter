@@ -3,7 +3,7 @@ import 'package:flutter_premier_projet/webservices/user.dart';
 import 'package:flutter_premier_projet/webservices/webservice.dart';
 
 void main() {
-  runApp(WebservicesApp());
+  runApp(const WebservicesApp());
 }
 
 class WebservicesApp extends StatelessWidget {
